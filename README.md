@@ -11,16 +11,15 @@ Las preguntas o busqueda las haces tu, las puedes hacer con inteligencia artific
 
 Para incluir un bloque de código, puedes usar tres acentos graves seguidos del lenguaje de programación. Por ejemplo, para un bloque de código en Python:
 
+
 \```json
 {
-    "leido": false,
-    "preguntas": [
-        "Pregunta de busqueda 1",
-        "Pregunta de busqueda dos"
-    ]
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudad": "Madrid"
 }
-
 \```
+
 
 Nota: No debes incluir la barra invertida (\\) antes de los acentos graves (\```). La he añadido aquí para evitar que se interprete como un bloque de código.
 
