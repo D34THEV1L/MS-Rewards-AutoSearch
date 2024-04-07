@@ -20,16 +20,14 @@ Ejemplo del json:
 }
 ```
 
+## Instalacion
 
-Nota: No debes incluir la barra invertida (\\) antes de los acentos graves (\```). La he añadido aquí para evitar que se interprete como un bloque de código.
+* Descarga el repositorio y lo comprimes
+* Instala los requerimientos
 
-## Listas
-
-Para hacer una lista, puedes usar guiones o asteriscos:
-
-- Elemento 1
-- Elemento 2
-* Elemento 3
+```cmd
+pip install requirements.txt -r
+```
 
 ## Enlaces
 
