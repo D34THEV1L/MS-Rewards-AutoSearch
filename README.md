@@ -20,6 +20,7 @@ Ejemplo del json:
 }
 ```
 ## Como Generar preguntas con la IA
+Puedes usar este comando o usar el tuyo propio
 ```txt
 Generame <Numero de preguntas> lo mas humanamente posible, no uses caracteres
 especiales que una consola no soporte y trata que las
