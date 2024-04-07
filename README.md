@@ -28,6 +28,11 @@ Ejemplo del json:
 ```cmd
 pip install requirements.txt -r
 ```
+* Inicia el programa
+```cmd
+python AutoMicrosoftRewards.py
+```
+Nota: Tambien puedes usar el open.bat
 
 ## Enlaces
 
