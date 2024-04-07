@@ -44,4 +44,5 @@ Texto del enlace
 
 Para insertar una imagen, puedes usar el siguiente formato:
 
-!Texto alternativo
+![image](https://github.com/D34THEV1L/MS-Rewards-AutoSearch/assets/87221905/8055ddd1-eace-43f4-b707-5812da6130d2)
+
