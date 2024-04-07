@@ -22,7 +22,7 @@ Ejemplo del json:
 
 ## Instalacion
 
-* Descarga el repositorio y lo comprimes
+* Descarga el repositorio
 * Instala los requerimientos
 
 ```cmd
