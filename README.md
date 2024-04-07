@@ -34,15 +34,12 @@ python AutoMicrosoftRewards.py
 ```
 Nota: Tambien puedes usar el open.bat
 
-## Enlaces
 
-Para crear un enlace, puedes usar el siguiente formato:
-
-Texto del enlace
 
 ## Imágenes
 
-Para insertar una imagen, puedes usar el siguiente formato:
+![image](https://github.com/D34THEV1L/MS-Rewards-AutoSearch/assets/87221905/46893365-256e-4703-b190-a0e97dd00966)
+
 
 ![image](https://github.com/D34THEV1L/MS-Rewards-AutoSearch/assets/87221905/8055ddd1-eace-43f4-b707-5812da6130d2)
 
