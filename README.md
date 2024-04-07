@@ -9,8 +9,7 @@ Las preguntas o busqueda las haces tu, las puedes hacer con inteligencia artific
 usaron, crea mas y cambialo a true, despues lanzas la aplicacion seleccionas un modo y dejas que se encargue de tus busquedas, la computadora no la toques hasta que el programa
 pare por si solo.
 
-
-
+Ejemplo del json:
 ```json
 {
     "leido": false,
