@@ -24,7 +24,7 @@ Puedes usar este comando o usar el tuyo propio
 ```txt
 Generame <Numero de preguntas> lo mas humanamente posible, no uses caracteres
 especiales que una consola no soporte y trata que las
-preguntas sean diferentes y humanas y una inteligencia artificial no pueda detectarlo,
+preguntas sean diferentes y humanas que una inteligencia artificial no pueda detectarlo,
  estos son los temas para
 las preguntas: <tema1> <tema2> <tema3> . . .
 Y quieroque utilizes este formato de json
