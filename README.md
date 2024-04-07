@@ -19,7 +19,19 @@ Ejemplo del json:
     ]
 }
 ```
-
+## Como Generar preguntas con la IA
+``` Generame <Numero de preguntas> lo mas humanamente posible, no uses caracteres especiales que una consola no soporte y trata que las preguntas sean diferentes y humanas y una inteligencia artificial no pueda detectarlo, estos son los temas para las preguntas: <tema1> <tema2> <tema3> . . .
+Y quieroque utilizes este formato de json
+{
+    "leido": false,
+    "preguntas": [
+        "Pregunta de busqueda 1",
+        "Pregunta de busqueda dos"
+    ]
+}
+```
+Para mayor seguridad humaniza tus preguntas
+https://writehuman.ai/
 ## Instalacion
 
 * Descarga el repositorio
