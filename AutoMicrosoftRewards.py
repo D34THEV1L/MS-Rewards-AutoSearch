@@ -4,12 +4,11 @@ import pyautogui
 import time
 import sys
 import random
+from plyer import notification
 
-
-# No soy muy bueno programando y este codigo en su mayoria fue hecho con IA puede tener bugs y errores.
 
 colorate = Colorate()
-
+preguntas_index = 0
 
 Banner = r"""
 __    __     ______        __  __     ______     ______     __  __         
@@ -24,7 +23,7 @@ Write.Print(f"              Microsoft Rewards Hacks Version 1.0.1 \n", Colors.wh
 Write.Print(f"- - - - - - - - - - - - / / Made by spyro \\ \\ - - - - - - - - - - - - - - \n", Colors.cyan_to_green, interval=0.005)
 Write.Print("                       Configuraciones: \n ", Colors.white_to_blue, interval=0.05)
 while True:
-    inter_type = Write.Input("Sleccione el modo: \n (P) Predeterminado [Alto Riesgo] \n (R) Random [Bajo Riesgo] \n (I) Intermitente rango aleatorio [Riesgo Medio] \n $>", Colors.purple_to_red, interval=0.0025)
+    inter_type = Write.Input("Sleccione el modo: \n (P) Predeterminado [Alto Riesgo] \n (R) Random [Bajo Riesgo] \n (I) Rango aleatorio [Riesgo Medio] \n $>", Colors.purple_to_red, interval=0.0025)
     if inter_type in ["P", "R", "I"]:
         break
     else:
@@ -38,6 +37,13 @@ elif inter_type == "I":
     random_range_x = Write.Input("Has seleccionado intermitente. Ingresa el inicio del rango: ", Colors.green_to_cyan, interval=0.0025)
     random_range_y = Write.Input("Ingresa el final del rango: ", Colors.green_to_cyan, interval=0.0025)
     Write.Print(f"Tu rango de aleatoriedad sera del {random_range_x} al {random_range_y}", Colors.green_to_cyan, interval=0.0025)
+
+
+inter_status = Write.Input("\n Quires hacer una intermicion? (S)", Colors.yellow_to_red, interval=0.0025)
+if inter_status == "S" or inter_status == "s":
+    questions_inter_number = Write.Input("\n Ingresa cuntas preguntas quieres hacer antes de la intermision: ", Colors.purple_to_red, interval=0.0025)
+    inter_time_minutes = int(Write.Input("\n Ingresa el tiempo de intermision en minutos (No decimales): ", Colors.purple_to_red, interval=0.0025)) * 60
+
 
 print(""" 
       Advertencia: Esta herramienta esta creada por un total inexperto en la programacion puede tener 
@@ -58,7 +64,10 @@ def cuenta_regresiva(segundos):
 
 cuenta_regresiva(10)
 print("\n")
-def escribir_preguntas(nombre_archivo):
+
+       
+    
+def escribir_preguntas(nombre_archivo, preguntas_index):
     with open(nombre_archivo, 'r') as archivo:
         datos = json.load(archivo)
         preguntas = datos.get('preguntas', [])
@@ -67,22 +76,29 @@ def escribir_preguntas(nombre_archivo):
             print("Parece que estas preguntas de busqueda ya fueron usadas, genera otras y cambia el valor a FALSE")
             sys.exit()
             
-
-
         for pregunta in preguntas:
+            preguntas_index = preguntas_index + 1
+            if inter_status == "S" or inter_status=="s":
+                if questions_inter_number == preguntas_index:
+                    print("Entrando en intermision, Puede seguir usando su computadora, no cierre el programa. \n Le notificaremos cuando se termine la intermision.")
+                    time.sleep(inter_time_minutes)
+                    notification.notify(
+                        title='Fin de la intermision',
+                        message='Tienes 20 segundos para volver a acomodar el puntero.')
+                    time.sleep(20)
             if inter_type == "P":
                 print(f"Esperando {str(pred_timer)} segundos")
-                time.sleep(int(pred_timer))
+                cuenta_regresiva(pred_timer)
             elif inter_type == "R":
                 randomtime = random.randint(0, 100)
                 print(f"Esperando: {str(randomtime)} segundos")
-                time.sleep(int(randomtime))
+                cuenta_regresiva(randomtime)
                 print(pregunta)
             elif inter_type == "I":
                 randomtimeI= random.randint(int(random_range_x), int(random_range_y))
                 print(f"Esperando: {str(randomtimeI)} segundos")
-                time.sleep(int(randomtimeI))
-                print(f"Pregunta: " + pregunta)
+                cuenta_regresiva(randomtimeI)
+                print(f"Pregunta {str(preguntas_index)}: " + pregunta)
             pyautogui.click()
             time.sleep(random.randint(1,3))
             pyautogui.hotkey('ctrl', 'a')
@@ -102,5 +118,5 @@ def escribir_preguntas(nombre_archivo):
     with open(nombre_archivo, 'w') as archivo:
         json.dump(datos, archivo, indent=4)
 
-
-escribir_preguntas('preguntas.json')
+preguntas_index = 0
+escribir_preguntas('preguntas.json', preguntas_index)
