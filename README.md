@@ -1,6 +1,11 @@
 # MS-Rewards-AutoSearch
 
-Facilita tus busquedas de bing con mayor seguridad que otros metodos
+Facilita tus busquedas de bing con mayor seguridad que otros metodos. Ojo este programa lo hice para mis necesidades lo guardo en github para no perderlo pero
+si encuentras el repositorio y lo usas ojala y te funcione bien.
+
+## Actualizacion
+10/04/2024
+Ahora puedes poner una intermision para evitar que te detecten y el programa solito te avisara cuando vaya a volver a retomar las operaciones
 
 ## Como Funciona
 
