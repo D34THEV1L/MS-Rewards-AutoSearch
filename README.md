@@ -91,6 +91,16 @@ Considerar el nivel de dificultad: La IA debe poder ajustar el nivel de dificult
 Ejemplo de prompt:
 
 Genera 50 preguntas similares a las de la lista proporcionada, cubriendo una variedad de temas, estilos y niveles de dificultad. Las preguntas deben ser formuladas de manera natural y coloquial, simulando el lenguaje que se utiliza en las búsquedas en internet. Evita el uso de comas y caracteres especiales.
+
+Usa este JSON asi quiero el formato:
+{
+    "leido": false,
+    "preguntas": [
+        "Pregunta de busqueda 1",
+        "Pregunta de busqueda dos"
+    ]
+}
+
 ```
 
 Para mayor seguridad humaniza tus preguntas
