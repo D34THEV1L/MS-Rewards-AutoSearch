@@ -41,6 +41,58 @@ Y quieroque utilizes este formato de json
     ]
 }
 ```
+
+O puedes usar: 
+```
+Objetivo: Generar preguntas similares a las que yo he creado a partir de un conjunto de temas predefinidos.
+
+Instrucciones:
+
+Proporcionar una lista de temas: La IA debe tener acceso a una lista de temas similares a los que yo he utilizado, como:
+
+*Aprender programar desde cero: lenguajes para principiantes
+*Editor de código gratuito y fácil para programar en Python
+*Mejores páginas web para aprender Java: cursos gratuitos
+*Libro para aprender C++ para principiantes
+*Objetos vs funciones en programación: diferencia y uso
+*Escribir código limpio y mantenible: trucos y consejos
+*Crear aplicación para celular: lenguajes e instrumentos
+*Depurar programa que no funciona: encontrar el error
+*Hacer código más rápido y eficiente
+*Pruebas unitarias: implementar en proyecto
+*Analizar funcionamiento de programa sin código fuente
+*Programa gratuito y fácil para ingeniería inversa de software
+*Identificar partes de un programa: funciones y variables
+*Entender flujo de un programa y cómo interactúan sus partes
+*Técnicas para descompilar código a lenguaje máquina
+*Modificar código de programa sin tener el original
+*Riesgos de hacer ingeniería inversa: precauciones
+*Legalidad de la ingeniería inversa: leyes a considerar
+*Aplicaciones prácticas de la ingeniería inversa
+*Cuestiones éticas en la ingeniería inversa
+*Crear primera página web: HTML y CSS
+*Estructura básica de una página web con HTML
+*Dar estilo a página web con CSS: propiedades y selectores
+*Layouts en CSS para distintos diseños de página
+*Menú de navegación responsive con HTML y CSS
+*Incorporar imágenes y videos en página web
+*Compatibilidad de página web con diferentes navegadores y dispositivos
+*Herramientas para crear y depurar sitio web
+*Optimizar página web para que cargue más rápido
+*Frameworks de JavaScript para páginas web interactivas
+*Especificar el estilo de las preguntas: La IA debe poder generar preguntas en diferentes estilos, como:
+
+Preguntas abiertas que inviten a la reflexión y el análisis.
+Preguntas cerradas que busquen información específica.
+Preguntas hipotéticas o de "qué pasaría si".
+Preguntas que comparan o contrastan diferentes conceptos.
+Considerar el nivel de dificultad: La IA debe poder ajustar el nivel de dificultad de las preguntas según el público objetivo.
+
+Ejemplo de prompt:
+
+Genera 50 preguntas similares a las de la lista proporcionada, cubriendo una variedad de temas, estilos y niveles de dificultad. Las preguntas deben ser formuladas de manera natural y coloquial, simulando el lenguaje que se utiliza en las búsquedas en internet. Evita el uso de comas y caracteres especiales.
+```
+
 Para mayor seguridad humaniza tus preguntas
 https://writehuman.ai/
 ## Instalacion
